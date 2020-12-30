@@ -4,6 +4,8 @@
 * Estimating 2D poses from the top-performing 2D pose detectors
 * Mapping the 2D predictions into 3D space
 
+## Required Installations
+
 1.	Install cuda and cudnn
 * Cuda 9.0 : https://developer.nvidia.com/cuda-90-download-archive
 * Cudnn 7.0.5: https://developer.nvidia.com/rdp/cudnn-archive
@@ -24,7 +26,7 @@
 -->Here, 2345678 is passed to load which is the checkpoint point for the global iteration number.
 9.	Fine-tuning an existing model
 * Command:
-Python train.py –use_sh –camera_frame –dropout 0.5 –load 1798200
+Python train.py –use_sh –camera_frame –dropout 0.5 –load 2345678
 10.	Create 3D poses from a sequence of 2D poses
 * Command:
 Python output.py –use_sh –camera_frame
