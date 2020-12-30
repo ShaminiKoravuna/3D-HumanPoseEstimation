@@ -1,5 +1,9 @@
 # 3D-Human Pose Estimation Using Different Sensor Modalities
 
+3D human pose estimation from images or videos has several high-end applications in the field of robotics, computer vision and graphics. In this thesis, the task of 3D human pose estimation is divided into two segments:
+1)	Estimating 2D poses from the top-performing 2D pose detectors
+2)	Mapping the 2D predictions into 3D space
+
 1.	Install cuda and cudnn
 * Cuda 9.0 : https://developer.nvidia.com/cuda-90-download-archive
 * Cudnn 7.0.5: https://developer.nvidia.com/rdp/cudnn-archive
