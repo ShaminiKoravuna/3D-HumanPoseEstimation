@@ -4,7 +4,7 @@
 * Estimating 2D poses from the top-performing 2D pose detectors
 * Mapping the 2D predictions into 3D space
 
-## Required Installations
+## Required installations and commands for execution
 
 1.	Install cuda and cudnn
 * Cuda 9.0 : https://developer.nvidia.com/cuda-90-download-archive
