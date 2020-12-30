@@ -1,8 +1,8 @@
 # 3D-Human Pose Estimation Using Various Sensor Inputs
 
 3D human pose estimation from images or videos has several high-end applications in the field of robotics, computer vision and graphics. In this thesis, the task of 3D human pose estimation is divided into two segments:
-1)	Estimating 2D poses from the top-performing 2D pose detectors
-2)	Mapping the 2D predictions into 3D space
+* Estimating 2D poses from the top-performing 2D pose detectors
+* Mapping the 2D predictions into 3D space
 
 1.	Install cuda and cudnn
 * Cuda 9.0 : https://developer.nvidia.com/cuda-90-download-archive
@@ -21,7 +21,7 @@
 8.	Evaluating the trained model
 * To evaluate the trained model, use the command:
 * Python train.py –use_sh –camera_frame –dropout 0.5 –load 2345678 –evaluate 
---Here, 2345678 is passed to load which is the checkpoint point for the global iteration number.
+-->Here, 2345678 is passed to load which is the checkpoint point for the global iteration number.
 9.	Fine-tuning an existing model
 * Command:
 Python train.py –use_sh –camera_frame –dropout 0.5 –load 1798200
