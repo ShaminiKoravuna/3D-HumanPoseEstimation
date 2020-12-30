@@ -70,4 +70,6 @@ We need to make sure that the data is loaded properly Log will be generated to l
 * root@8f1548fc3b34: ~/torch 
 * cd /media 
 * th main.lua predict-test 
+### Output
+![](https://github.com/ShaminiKoravuna/3D-HumanPoseEstimation/blob/main/imgs/output%20(1).gif)
 
