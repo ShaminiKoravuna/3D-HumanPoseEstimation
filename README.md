@@ -1,4 +1,4 @@
-# 3D-Human Pose Estimation Using Different Sensor Modalities
+# 3D-Human Pose Estimation Using Various Sensor Inputs
 
 3D human pose estimation from images or videos has several high-end applications in the field of robotics, computer vision and graphics. In this thesis, the task of 3D human pose estimation is divided into two segments:
 1)	Estimating 2D poses from the top-performing 2D pose detectors
