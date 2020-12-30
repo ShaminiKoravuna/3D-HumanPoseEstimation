@@ -25,41 +25,41 @@ Python train.py –use_sh –camera_frame –dropout 0.5 –load 1798200
 Command:
 Python output.py –use_sh –camera_frame
 
-Description of all the files
-The repository contains 7 python files
-•	cam.py: It loads the information of the cameras of Human3.6M dataset
-•	data.py: It contains function for dealing with human3.6M dataset
-•	model.py: It contains the model designed using RNNs with seq-to-seq network
-•	procustes.py: It computes similarity transformation
-•	skeleton.py: It contains functions to visualize human poses
-•	train.py: It trains the model.
-•	output.py: It generates a sequence of 3D poses from a sequence of 2D poses.
+## Description of all the files
+### The repository contains 7 python files
+* cam.py: It loads the information of the cameras of Human3.6M dataset
+* data.py: It contains function for dealing with human3.6M dataset
+* model.py: It contains the model designed using RNNs with seq-to-seq network
+* procustes.py: It computes similarity transformation
+* skeleton.py: It contains functions to visualize human poses
+* train.py: It trains the model.
+* output.py: It generates a sequence of 3D poses from a sequence of 2D poses.
 
-The data is segregated in order to have an easy access for retrieving:
+### The data is segregated in order to have an easy access for retrieving:
 
 The 2D predictions are given in 8 sets for each subject
+![Image_traffic](https://github.com/ShaminiKoravuna/3D-HumanPoseEstimation/blob/main/imgs/1.png)
  
 The 3D predictions are given in 2 sets for each subject
+![Image_traffic](https://github.com/ShaminiKoravuna/3D-HumanPoseEstimation/blob/main/imgs/2.png)
  
-We need to make sure that the data is loaded properly
-Log will be generated to log for every training. The model will be stored in trained_model folder. For visualizing it in tensorboard:
-Tensorboard --logdir  ./log/train_log/
+We need to make sure that the data is loaded properly Log will be generated to log for every training. The model will be stored in trained_model folder. For visualizing it in tensorboard:
+* Tensorboard --logdir  ./log/train_log/
 
 
-Stacked hourglass model and dependencies
-Requirements:
-Torch7
-Hdf5
-cudnn
-programming language: lua
+## Stacked hourglass model and dependencies
+### Requirements:
+* Torch7
+* Hdf5
+* cudnn
+* programming language: lua
 
-Torch 7 docker image for stacked hourglass model:
-sudo nvidia-docker pull registry.cn-hangzhou.aliyuncs.com/docker_learning_aliyun/torch: v1
+### Torch 7 docker image for stacked hourglass model:
 
-Running the model for 2D predictions:
-
-sudo nvidia-docker run -it --rm -v /path/to/pose-hg-demo-master:/media registry.cn-hangzhou.aliyuncs.com/docker_learning_aliyun/torch: v1
-root@8f1548fc3b34: ~/torch# 
-cd /media 
-th main.lua predict-test 
+* sudo nvidia-docker pull registry.cn-hangzhou.aliyuncs.com/docker_learning_aliyun/torch: v1
+* Running the model for 2D predictions:
+* sudo nvidia-docker run -it --rm -v /path/to/pose-hg-demo-master:/media registry.cn-hangzhou.aliyuncs.com/docker_learning_aliyun/torch: v1
+* root@8f1548fc3b34: ~/torch 
+* cd /media 
+* th main.lua predict-test 
 
